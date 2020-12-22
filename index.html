@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive NavBar</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+             $('.toggle').click(function(){
+                 $('ul').toggleClass('active')
+             })
+        })
+    
+    </script>
+
+</head>
+
+<body>
+    <section>
+        <header>
+            <a href="#" class="logo"><img src="logo.jpg" alt=""></a>
+            <a class="toggle">Menu</a>
+            <ul class="active">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">Portifolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+    </section>
+
+</body>
+
+</html>
